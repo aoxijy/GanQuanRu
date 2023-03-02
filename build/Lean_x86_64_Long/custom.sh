@@ -10,6 +10,7 @@ cat feeds.conf.default
 
 # 添加第三方软件包
 git clone https://github.com/kenzok8/small-package package/small-package
+git clone https://github.com/thinktip/luci-theme-neobird.git  package/lean
 
 # 更新并安装源
 ./scripts/feeds clean
