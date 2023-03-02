@@ -33,7 +33,7 @@ env:
   GIT_USER_TOKEN: ${{ secrets.GIT_USER_TOKEN }}
   TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
   TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-  GITHUB_RELEASE: https://github.com/db-one/OpenWrt-AutoBuild/releases
+  GITHUB_RELEASE: https://github.com/aoxijy/GanQuanRu/releases
 
 jobs: 
   build:
