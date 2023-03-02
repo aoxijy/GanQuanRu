@@ -10,6 +10,7 @@ cat feeds.conf.default
 
 # 添加第三方软件包
 git clone https://github.com/kenzok8/small-package package/small-package
+git clone https://github.com/thinktip/luci-theme-neobird.git
 
 # 更新并安装源
 ./scripts/feeds clean
@@ -20,6 +21,7 @@ rm -rf feeds/luci/applications/luci-app-qbittorrent
 rm -rf feeds/luci/themes/luci-theme-argon
 rm -rf feeds/packages/net/haproxy
 rm -rf package/lean/autocore
+rm -rf luci-theme-neobird
 
 # 自定义定制选项
 NET="package/base-files/files/bin/config_generate"
@@ -259,6 +261,7 @@ CONFIG_PACKAGE_luci-app-ddns-go=y
 # CONFIG_PACKAGE_luci-app-argon-config=n #argon主题设置
 CONFIG_PACKAGE_luci-theme-atmaterial_new=y #atmaterial 三合一主题
 CONFIG_PACKAGE_luci-theme-design=y #design 主题
+CONFIG_PACKAGE_luci-theme-neobird=y #neobird 主题
 CONFIG_PACKAGE_luci-app-autotimeset=y #定时重启系统，网络
 # CONFIG_PACKAGE_luci-app-ddnsto=n #小宝开发的DDNS.to内网穿透
 # CONFIG_PACKAGE_ddnsto=n #DDNS.to内网穿透软件包
