@@ -1,0 +1,2 @@
+# GanQuanRu
+OpenWrt-AutoBuild
