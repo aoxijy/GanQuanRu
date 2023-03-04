@@ -253,14 +253,14 @@ CONFIG_PACKAGE_luci-app-openclash=y #OpenClash客户端
 # CONFIG_PACKAGE_luci-app-eqos=n #IP限速
 # CONFIG_PACKAGE_luci-app-control-weburl=n #网址过滤
 # CONFIG_PACKAGE_luci-app-smartdns=n #smartdns服务器
-# CONFIG_PACKAGE_luci-app-adguardhome=y #ADguardhome
+CONFIG_PACKAGE_luci-app-adguardhome=y #ADguardhome
 CONFIG_PACKAGE_luci-app-poweroff=y #关机（增加关机功能）
 # CONFIG_PACKAGE_luci-app-argon-config=n #argon主题设置
 CONFIG_PACKAGE_luci-theme-atmaterial_new=y #atmaterial 三合一主题
 CONFIG_PACKAGE_luci-theme-design=y #design 主题
 CONFIG_PACKAGE_luci-app-autotimeset=y #定时重启系统，网络
 # CONFIG_PACKAGE_luci-app-ddnsto=n #小宝开发的DDNS.to内网穿透
-CONFIG_PACKAGE_luci-app-ddns-go=y
+CONFIG_PACKAGE_luci-app-ddns-go=y #DDNS解析服务
 # CONFIG_PACKAGE_ddnsto=n #DDNS.to内网穿透软件包
 EOF
 
@@ -300,7 +300,7 @@ CONFIG_PACKAGE_luci-app-accesscontrol=n #上网时间控制
 CONFIG_PACKAGE_luci-app-wol=n #网络唤醒
 CONFIG_PACKAGE_luci-app-nps=n #nps内网穿透
 CONFIG_PACKAGE_luci-app-frpc=y #Frp内网穿透
-CONFIG_PACKAGE_luci-app-frps=y
+CONFIG_PACKAGE_luci-app-frps=n
 CONFIG_PACKAGE_luci-app-nlbwmon=y #宽带流量监控
 CONFIG_PACKAGE_luci-app-wrtbwmon=y #实时流量监测
 CONFIG_PACKAGE_luci-app-haproxy-tcp=n #Haproxy负载均衡
