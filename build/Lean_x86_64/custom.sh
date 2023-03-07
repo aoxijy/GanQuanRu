@@ -87,7 +87,7 @@ if [ $? -eq 0 ]; then
   mkdir -p $HOME/files/etc/openclash/core
   cd $HOME/clash-core
 # 下载Dve内核
-  wget -q https://raw.githubusercontent.com/vernesong/OpenClash/master/core-lateset/dev/clash-linux-amd64.tar.gz
+  wget -q https://raw.githubusercontent.com/vernesong/OpenClash/core/master/dev/clash-linux-amd64.tar.gz
   if [[ $? -ne 0 ]];then
     wget -q https://github.com/vernesong/OpenClash/releases/download/Clash/clash-linux-amd64.tar.gz
   else
@@ -104,7 +104,7 @@ if [ $? -eq 0 ]; then
   fi
   rm -rf $HOME/clash-core/clash-linux-amd64.tar.gz
 # 下载Meta内核
-  wget -q https://raw.githubusercontent.com/vernesong/OpenClash/master/core-lateset/meta/clash-linux-amd64.tar.gz
+  wget -q https://raw.githubusercontent.com/vernesong/OpenClash/core/master/meta/clash-linux-amd64.tar.gz
   if [[ $? -ne 0 ]];then
     wget -q https://raw.githubusercontent.com/vernesong/OpenClash/master/core-lateset/meta/clash-linux-amd64.tar.gz
   else
