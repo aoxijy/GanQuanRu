@@ -275,12 +275,12 @@ EOF
 # Passwall插件:
 cat >> .config <<EOF
 CONFIG_PACKAGE_luci-app-passwall=y
-# CONFIG_PACKAGE_naiveproxy=n
-CONFIG_PACKAGE_chinadns-ng=n
-# CONFIG_PACKAGE_brook=n
-CONFIG_PACKAGE_trojan-go=n
-CONFIG_PACKAGE_xray-plugin=n
-CONFIG_PACKAGE_shadowsocks-rust-sslocal=n
+# CONFIG_PACKAGE_naiveproxy=y
+CONFIG_PACKAGE_chinadns-ng=y
+# CONFIG_PACKAGE_brook=y
+CONFIG_PACKAGE_trojan-go=y
+CONFIG_PACKAGE_xray-plugin=y
+CONFIG_PACKAGE_shadowsocks-rust-sslocal=y
 EOF
 
 # Turbo ACC 网络加速:
