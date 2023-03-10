@@ -9,7 +9,7 @@
 cat feeds.conf.default
 
 # 添加第三方软件包
-git clone https://github.com/aoxiyu/yu-package package/yu-package
+git clone https://github.com/kenzok8/small-package package/small-package
 
 # 更新并安装源
 ./scripts/feeds clean
@@ -266,13 +266,13 @@ EOF
 
 # ShadowsocksR插件:
 cat >> .config <<EOF
-CONFIG_PACKAGE_luci-app-ssr-plus=n
+CONFIG_PACKAGE_luci-app-ssr-plus=y
 # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_SagerNet_Core is not set
 EOF
 
 # Passwall插件:
 cat >> .config <<EOF
-CONFIG_PACKAGE_luci-app-passwall=n
+CONFIG_PACKAGE_luci-app-passwall=y
 # CONFIG_PACKAGE_naiveproxy=n
 CONFIG_PACKAGE_chinadns-ng=n
 # CONFIG_PACKAGE_brook=n
