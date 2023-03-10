@@ -268,13 +268,13 @@ EOF
 
 # ShadowsocksR插件:
 cat >> .config <<EOF
-CONFIG_PACKAGE_luci-app-ssr-plus=n
+CONFIG_PACKAGE_luci-app-ssr-plus=y
 # CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_SagerNet_Core is not set
 EOF
 
 # Passwall插件:
 cat >> .config <<EOF
-CONFIG_PACKAGE_luci-app-passwall=n
+CONFIG_PACKAGE_luci-app-passwall=y
 # CONFIG_PACKAGE_naiveproxy=n
 CONFIG_PACKAGE_chinadns-ng=n
 # CONFIG_PACKAGE_brook=n
